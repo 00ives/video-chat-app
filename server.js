@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:room', (req, res) => {
-  res.redrender('room', { roomId: req.params.room });
+  res.render('room', { roomId: req.params.room });
 });
 
 server.listen(3000);
